@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+article {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, pink, hotpink); }
+
+/*# sourceMappingURL=style.css.map */
