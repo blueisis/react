@@ -1,0 +1,31 @@
+h1 {
+    position: absolute;
+    top: 7vh;
+    left: 4vw;
+    font-size: 0;
+
+    strong {
+        font-size: 36px;
+        font-family: "arial";
+        color: #fff;
+        line-height: 1.4;
+        letter-spacing: 1px;
+    }
+
+    span {
+        font-size: 12px;
+        font-family: "arial";
+        color: #fff;
+        opacity: 0.8;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 8vh;
+    right: 4vw;
+    font-size:  24px;
+    color: #fff;
+}
