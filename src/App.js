@@ -1,4 +1,6 @@
 import './css/style.css';
+import {Logo, Menu} from './components/Header.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
           <i className="fas fa-bars"></i>
         </a>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <Footer />
       </figure>
     </div>
   );
