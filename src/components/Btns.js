@@ -8,6 +8,7 @@ function Btns(props){
   function plus(evt){
     setIndex(++index);
     props.frame.current.style.transform = `rotate(${index*deg}deg)`;
+    // app.js에서 보낸 props 값. props.frame 안에 있는 current 값 => section
   }
 
   function minus(evt){
