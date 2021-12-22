@@ -1,20 +1,29 @@
+import { useState } from "react";
+
 function Panal(){
     const path = process.env.PUBLIC_URL;
     const arr = ['Blizzards','Calm','Dusty_Road','Escape','Payday','Retreat','Seasonal','Vespers'];
     const deg = 360/arr.length;
     const btnStyle = {position: 'fixed', top:0, left:0};
 
-    function changeArr(){
-        arr[0] = 'Escape';
+    let [names, setNames] = useState(arr);
+
+    const changeState=()=>{
+        let newArr = [...arr]; //배열 복사
+        newArr[0] = 'Escape'; // 복사한 배열의 첫번째 값을 ''로 변경
+        setNames(newArr); // 변경한 배열을 setNames에 배치
+
+        console.log(newArr);
         console.log(arr);
     }
     
+    
     return(
         <>
-        <button style={btnStyle} onClick={changeArr}>button</button>
+        <button style={btnStyle} onClick={changeState}>button</button>
         <section>
             {
-            arr.map((data,index)=>{
+            names.map((data,index)=>{
                 let style = {transform:`rotate(${deg*index}deg) translateY(-100vh)`};
                 let imgSrc = `${path}/img/${data}.jpg`;
 

@@ -11,9 +11,7 @@ function App() {
       <figure>
         <Logo />
         <Menu />
-
         <Panal />
-
         <Footer />
       </figure>
     </div>
