@@ -12,9 +12,7 @@ function App() {
         <Logo />
         <Menu />
 
-        <section>
-          <Panal />
-        </section>
+        <Panal />
 
         <Footer />
       </figure>

@@ -12,6 +12,7 @@ function Panal(){
     return(
         <>
         <button style={btnStyle} onClick={changeArr}>button</button>
+        <section>
             {
             arr.map((data,index)=>{
                 let style = {transform:`rotate(${deg*index}deg) translateY(-100vh)`};
@@ -29,6 +30,7 @@ function Panal(){
                     )
                 })
             }
+            </section>
         </>
     )
 }
